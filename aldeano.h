@@ -92,14 +92,14 @@ Aldeano *Aldeano_recuperar(FILE *archivo){
         return false;
     }
     char nombre[100];
-    int edad[100];
-    int salud[100];
+    int edad;
+    int salud;
 
     fscanf(archivo, "%s", nombre);
     //nombre[strlen(buffer)-1] = '\0';
     fscanf(archivo, "%i", &edad);
-    if(feof(archivo)) return NULL;
     fscanf(archivo, "%i", &salud);
+    if(feof(archivo)) return NULL;
 
     Aldeano *aldeano = Aldeano_init(nombre, edad, salud);
 

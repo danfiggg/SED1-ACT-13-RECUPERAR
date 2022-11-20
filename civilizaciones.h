@@ -107,6 +107,7 @@ bool ListaLigadaDoble_mostrar(ListaLigadaDoble *listaLigadaDoble){
     }
 
     printf("CANTIDAD DE CIVILIZACIONES: %zu\n\n", listaLigadaDoble->cantidad);
+    
     NodoDoble2 *temp = listaLigadaDoble->inicio;
     
     while(temp != NULL){

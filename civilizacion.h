@@ -108,6 +108,8 @@ Civilizacion *Civilizacion_recuperar(FILE *archivo){
     char nombre_civilizacion[100];
     strcpy(nombre_civilizacion, civilizacion->nombre);
     strcat(nombre_civilizacion, ".txt");
-    AldeanosLista_recuperar(civilizacion->aldeanosLista,nombre_civilizacion);}
+    AldeanosLista_recuperar(civilizacion->aldeanosLista,nombre_civilizacion);
+    return civilizacion;
+    }
 
 #endif

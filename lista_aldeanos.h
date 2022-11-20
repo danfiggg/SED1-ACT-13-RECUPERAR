@@ -238,6 +238,7 @@ bool AldeanosLista_respaldar(AldeanosLista *aldeanosLista, char *nombre_civiliza
         Aldeano_respaldar(aldeanosLista->aldeanos[i], archivo);
     }
     fclose(archivo);
+    return true;
 }
 
 bool AldeanosLista_recuperar(AldeanosLista *aldeanosLista, char *nombre_civilizacion){
